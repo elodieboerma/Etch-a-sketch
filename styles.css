@@ -1,0 +1,12 @@
+#container {
+    border: solid 5px black;
+    width: 200px;
+    height: 200px;
+}
+
+/* grid boxes */
+div {
+    border: solid 5px black;
+    width: 10px;
+    height: 10px;
+}
