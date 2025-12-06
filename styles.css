@@ -1,12 +1,35 @@
-#container {
+/*#container {
     border: solid 5px black;
     width: 200px;
     height: 200px;
 }
 
-/* grid boxes */
+grid boxes
 div {
     border: solid 5px black;
     width: 10px;
     height: 10px;
-}
+}*/
+
+/*pseduocode begins here*/
+
+/*#container:*/
+    /*(solid black 1px border) Do I need this for the outside of the whole grid???*/
+    /*500*500px height*width -- adjust based on how much space this actually takes up on computer*/
+    /*flexbox*/
+    /*no space between the little square boxes*/
+
+/*.gridSquare:*/
+    /*solid black 1px border -- how to make border incl in div diimensions bc I forgot*/
+    /*width = #container.width / 16*/
+    /*height = width*/
+    /*flexbox*/
+    /*inline (bc divs are normally on their own lines)*/
+
+/*Do I even need this here???*/
+/*.gridRow:*/
+    /*flexbox*/
+    /*new row*/
+
+/*.changeColor:*/
+    /*change backgroundColor to black*/
