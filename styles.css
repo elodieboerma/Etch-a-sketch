@@ -14,22 +14,41 @@ div {
 /*pseduocode begins here*/
 
 /*#container:*/
+#container {
     /*(solid black 1px border) Do I need this for the outside of the whole grid???*/
+    border: solid black 1px;
     /*500*500px height*width -- adjust based on how much space this actually takes up on computer*/
+    height: 500px;
+    width: 500px;
     /*flexbox*/
-    /*no space between the little square boxes*/
+    display: flex;
+    /*let children wrap, default is no wrap*/
+    flex-wrap: wrap;
+    /*no space between the little square boxes -- don't think I need to do anything for this (??)*/
+}
 
 /*.gridSquare:*/
+.gridSquare {
     /*solid black 1px border -- how to make border incl in div diimensions bc I forgot*/
+    border: solid black 1px;
     /*width = #container.width / 16*/
+    width: #container.width / 16; /*not sure how to do this correctly in css*/
+        /*actually might have to do this in js, will see if I can leave height in here*/
+        /*or maybe could put aspect-ratio: 1 - 1 above specified dimension and leave the other alone
     /*height = width*/
+    height: width; /*same comment as for width*/
+        /*I think the red underlining will be fixed when the width line is fixed*/
     /*flexbox*/
+    display: flex;
     /*inline (bc divs are normally on their own lines)*/
+    display: inline-block /*not sure if I actually need this bc I'm using flexbox*/
+}
 
 /*Do I even need this here???*/
-/*.gridRow:*/
-    /*flexbox*/
-    /*new row*/
+/*.gridRow: idk what if anything to put here*/
 
 /*.changeColor:*/
+.changeColor {
     /*change backgroundColor to black*/
+    background-color: black;
+}
