@@ -28,6 +28,7 @@ function makeGrid(numSquaresInARow) {
     };
 };
 
+/*maybe try to do this w/ 16 first and then try to make it responsive once it shows up correctly?*/
 let gridSquare = document.getElementsByClassName("gridSquare");
 gridSquare.style.aspect-ratio:  1 / 1 | initial | inherit;
 /*aspect-ratio: 1 / 1;*/
