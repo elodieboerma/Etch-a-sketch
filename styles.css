@@ -15,31 +15,27 @@ button {
 
 /*#container:*/
 #container {
+    /*flexbox*/
+    display: flex;
+    /*let children wrap, default is no wrap*/
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    flex: 0 0 6.25%; /*1/16 = 0.625*/
+    /*no space between the little square boxes -- don't think I need to do anything for this (??)*/
     /*(solid black 1px border) Do I need this for the outside of the whole grid???*/
     border: solid black 1px;
     /*500*500px height*width -- adjust based on how much space this actually takes up on computer*/
     height: 600px;
     width: 600px;
-    /*flexbox*/
-    display: flex;
-    /*let children wrap, default is no wrap*/
-    flex-wrap: wrap;
-    /*no space between the little square boxes -- don't think I need to do anything for this (??)*/
 }
 
 /*.gridSquare:*/
 .gridSquare {
+    box-sizing: border-box;
     /*solid black 1px border -- how to make border incl in div diimensions bc I forgot*/
-    border: solid black 1px;
-    /*flexbox*/
-    display: flex;
-    /*inline (bc divs are normally blocks I think (???))*/
-    display: inline-block /*not sure if I actually need this bc I'm using flexbox*/
-    height = auto;
+    border: solid red 1px;
+    width: 600/16;
 }
-
-/*Do I even need this here???*/
-/*.gridRow: idk what if anything to put here*/
 
 /*.changeColor:*/
 .changeColor {
