@@ -28,6 +28,18 @@ function makeGrid(numSquaresInARow) {
     };
 };
 
+let gridSquare = document.getElementsByClassName("gridSquare");
+gridSquare.style.aspect-ratio:  1 / 1 | initial | inherit;
+/*aspect-ratio: 1 / 1;*/
+gridSquare.style.width = container.width / 16;
+/*gridSquare.style.height = /*gridSquare.style.width; auto;*/
+    /*not sure how to do this correctly in css*/
+        /*actually might have to do this in js, will see if I can leave height in here*/
+        /*or maybe could put aspect-ratio: 1 - 1 above specified dimension and leave the other alone
+    /*height = width*/
+    /*height: width;*/ /*same comment as for width*/
+        /*I think the red underlining will be fixed when the width line is fixed*/
+
 //select button
 const button = document.querySelector("button");
 

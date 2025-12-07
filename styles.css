@@ -31,17 +31,11 @@ button {
 .gridSquare {
     /*solid black 1px border -- how to make border incl in div diimensions bc I forgot*/
     border: solid black 1px;
-    /*width = #container.width / 16*/
-    width: #container.width / 16; /*not sure how to do this correctly in css*/
-        /*actually might have to do this in js, will see if I can leave height in here*/
-        /*or maybe could put aspect-ratio: 1 - 1 above specified dimension and leave the other alone
-    /*height = width*/
-    height: width; /*same comment as for width*/
-        /*I think the red underlining will be fixed when the width line is fixed*/
     /*flexbox*/
     display: flex;
-    /*inline (bc divs are normally on their own lines)*/
+    /*inline (bc divs are normally blocks I think (???))*/
     display: inline-block /*not sure if I actually need this bc I'm using flexbox*/
+    height = auto;
 }
 
 /*Do I even need this here???*/
