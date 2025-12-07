@@ -11,6 +11,19 @@ div {
     height: 10px;
 }*/
 
+#bigBox {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    margin: auto;
+}
+
+button {
+    display: flex;
+    width: 70px;
+    margin: 5px auto;
+}
+
 /*pseduocode begins here*/
 
 /*#container:*/
