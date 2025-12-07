@@ -18,8 +18,8 @@ div {
     /*(solid black 1px border) Do I need this for the outside of the whole grid???*/
     border: solid black 1px;
     /*500*500px height*width -- adjust based on how much space this actually takes up on computer*/
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     /*flexbox*/
     display: flex;
     /*let children wrap, default is no wrap*/
