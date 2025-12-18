@@ -4,9 +4,7 @@ const container = document.getElementById("container");
 let numSquares = 16;
 
 function makeGrid(numSquaresInARow) {
-    //do this 16x; then the whole thing 16x again (or just do it 256x???)
-    for(i = 0; i < 16; i++) {
-        for(j = 0; j < 16; j++) {
+        for(j = 0; j < 256; j++) {
             //make div element
             let newBox = document.createElement("div");
             //add class gridSquare
@@ -21,7 +19,6 @@ function makeGrid(numSquaresInARow) {
             //eventListener for mouseenter -- if not then try onmouseenter, or mouseover or mousemove
             newBox.addEventListener("mouseenter", () => newBox.classList.add("changeColor"));
         };
-    };
 };
 
 //select button
