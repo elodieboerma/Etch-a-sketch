@@ -34,8 +34,7 @@ button {
     box-sizing: border-box;
     /*solid black 1px border -- how to make border incl in div diimensions bc I forgot*/
     border: solid black 1px;
-    width: 37px;
-    height: 37px;
+    aspect-ratio: 1 / 1;
 }
 
 /*.changeColor:*/

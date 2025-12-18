@@ -10,10 +10,8 @@ function makeGrid(numSquaresInARow) {
             let newBox = document.createElement("div");
             //add class gridSquare
             newBox.classList.add("gridSquare");
-            /*maybe try to do this w/ 16 first and then try to make it responsive once it shows up correctly?*/
-            newBox.style.aspectRatio = "1 / 1";
             //let gridSquare = document.getElementByClassName("gridSquare");
-            newBox.style.width = container.clientwidth / 16 + "px";
+            newBox.style.width = (container.clientWidth / numSquaresInARow) + "px";
             //add as child to #container
             container.appendChild(newBox);
 
