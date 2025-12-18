@@ -3,6 +3,24 @@ const container = document.getElementById("container");
 //let numSquares = 16
 let number = 16;
 
+function getRandomHexColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  };
+  return color;
+}
+
+function changeColor(item) {
+    const colorValues = [];
+    for (i = 0; i < 2; i ++) {
+        colorValues.push(getRandomHexColor());
+    };
+    colorValues.push(Math.random());
+    item.style.backgroundColor = "rgba(colorValues)";
+}
+
 function makeGrid(numSquaresInARow) {
         let numSquares = numSquaresInARow**2;
         for(j = 0; j < numSquares; j++) {
@@ -16,7 +34,9 @@ function makeGrid(numSquaresInARow) {
             container.appendChild(newBox);
 
             //eventListener for mouseenter -- if not then try onmouseenter, or mouseover or mousemove
-            newBox.addEventListener("mouseenter", () => newBox.classList.add("changeColor"));
+            newBox.addEventListener("mouseenter", () => {
+                changeColor(newBox);
+            });
         };
 };
 

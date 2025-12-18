@@ -36,9 +36,3 @@ button {
     border: solid black 1px;
     aspect-ratio: 1 / 1;
 }
-
-/*.changeColor:*/
-.changeColor {
-    /*change backgroundColor to black*/
-    background-color: black;
-}
