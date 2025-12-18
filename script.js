@@ -29,9 +29,14 @@ makeGrid(number);
 button.addEventListener("click", (/*numSquares not sure if needed here*/) => {
     //numSquares = prompt("questionHere")
     number = prompt("How many squares per row?")
-    //run the js to make the grid again with the new value of number
+    //limit is 100 squares per row
+    while (number > 100) {
+        number = prompt("Too big. Please enter a number less than or equal to 100.");
+    };
+    //remove current grid
     while (container.hasChildNodes()) {
         container.removeChild(container.children[0]);
     };
+    //make new grid with new value of number
     makeGrid(number);
 });
