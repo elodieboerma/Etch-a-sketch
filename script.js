@@ -29,7 +29,9 @@ makeGrid(number);
 button.addEventListener("click", (/*numSquares not sure if needed here*/) => {
     //numSquares = prompt("questionHere")
     number = prompt("How many squares per row?")
-    //run the js to make the grid again with the new numSquares values, but no change in total 
-    // pixels used, need to use a function somehow???
+    //run the js to make the grid again with the new value of number
+    while (container.hasChildNodes()) {
+        container.removeChild(container.children[0]);
+    };
     makeGrid(number);
 });
