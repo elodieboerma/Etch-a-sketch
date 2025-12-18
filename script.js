@@ -14,7 +14,7 @@ function getRandomHexColor() {
 
 function changeColor(item) {
     const colorValues = [];
-    for (i = 0; i < 2; i ++) {
+    for (i = 0; i < 3; i ++) {
         colorValues.push(getRandomHexColor());
     };
     colorValues.push(Math.random());
