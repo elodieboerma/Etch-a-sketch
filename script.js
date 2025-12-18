@@ -7,8 +7,7 @@ function changeColor(item) {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
-    const a = 0.1
-    item.style.backgroundColor = `rgb(${r},${g},${b},${a})`;
+    item.style.backgroundColor = `rgb(${r},${g},${b})`;
 }
 
 function makeGrid(numSquaresInARow) {
