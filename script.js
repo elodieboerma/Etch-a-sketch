@@ -1,10 +1,11 @@
 //select #container
 const container = document.getElementById("container");
 //let numSquares = 16
-let numSquares = 16;
+let number = 16;
 
 function makeGrid(numSquaresInARow) {
-        for(j = 0; j < 256; j++) {
+        let numSquares = numSquaresInARow**2;
+        for(j = 0; j < numSquares; j++) {
             //make div element
             let newBox = document.createElement("div");
             //add class gridSquare
@@ -24,13 +25,13 @@ function makeGrid(numSquaresInARow) {
 //select button
 const button = document.querySelector("button");
 
-makeGrid(numSquares);
+makeGrid(number);
 
 //listen for when button clicked
 button.addEventListener("click", (/*numSquares not sure if needed here*/) => {
     //numSquares = prompt("questionHere")
-    numSquares = prompt("How many squares per row?")
+    number = prompt("How many squares per row?")
     //run the js to make the grid again with the new numSquares values, but no change in total 
     // pixels used, need to use a function somehow???
-    makeGrid(numSquares);
+    makeGrid(number);
 });
